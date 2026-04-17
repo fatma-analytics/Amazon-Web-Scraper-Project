@@ -33,9 +33,33 @@
 
 ## 📂 Project Structure
 - `amazon_scraper.py`: Refactored, modular Python script for production-ready scraping.
-- `Amazon Web Scraper Project.ipynb`: Original Jupyter Notebook with step-by-step development and testing.
-- `AmazonWebScraperDataset.csv`: The generated dataset containing historical price data.
-- `Amazon Web Scraper Project.pdf`: Exported version of the development process.
+- `Amazon Web Scraper Project.ipynb`: *Original Jupyter Notebook with step-by-step development and testing. This file is included for transparency of the development process.*
+- `AmazonWebScraperDataset.csv`: *The generated dataset containing historical price data. Due to its dynamic nature and potential size, it is not directly included in the repository. It will be generated upon script execution.*
+- `Amazon Web Scraper Project.pdf`: *Exported version of the development process. Due to its size, it is not directly included in this repository.*
+
+---
+
+## 🏃‍♀️ How to Run Locally
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/fatma-analytics/Amazon-Web-Scraper-Project.git
+    cd Amazon-Web-Scraper-Project
+    ```
+2.  **Install dependencies**:
+    ```bash
+    pip install beautifulsoup4 requests pandas
+    ```
+3.  **Configure the scraper**:
+    *   Open `amazon_scraper.py`.
+    *   Update the `URL` variable with the Amazon product link you want to track.
+    *   (Optional) Set `PRICE_THRESHOLD` for email alerts.
+    *   (Optional) Configure email credentials if you want to receive alerts.
+4.  **Execute the scraper**:
+    ```bash
+    python amazon_scraper.py
+    ```
+    *This will create or append to `AmazonWebScraperDataset.csv` in the project root.*
 
 ---
 
